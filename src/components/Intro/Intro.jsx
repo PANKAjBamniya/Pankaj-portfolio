@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import boy from "../../img/pankaj.jpg";
+import boy from "../../img/pnkj.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
