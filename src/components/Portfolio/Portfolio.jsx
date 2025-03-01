@@ -4,17 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Sidebar from "../../img/em-project.png";
 import Ecommerce from "../../img/job project .png";
-import HOC from "../../img/ebook.png";
+import labcare from "../../img/labcare.png";
 import MusicApp from "../../img/khatabook.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" id="projects">
       {/* heading */}
       <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
-      <span>Portfolio</span>
 
       {/* slider */}
       <Swiper
@@ -38,7 +37,7 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://1700ebooks.netlify.app/" target="_blank">
-            <img src={HOC} alt="" />
+            <img src={labcare} alt="" />
           </a>
         </SwiperSlide>
       </Swiper>
