@@ -6,7 +6,10 @@ import Sidebar from "../../img/em-project.png";
 import Ecommerce from "../../img/job project .png";
 import labcare from "../../img/labcare.png";
 import MusicApp from "../../img/khatabook.png";
+import empl from "../../img/empl.png";
 import { themeContext } from "../../Context";
+import { Autoplay } from "swiper";
+
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -20,6 +23,12 @@ const Portfolio = () => {
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
         className="portfolio-slider"
       >
         <SwiperSlide>
@@ -28,16 +37,21 @@ const Portfolio = () => {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://khatabookdev.netlify.app" target="_blank">
-            <img src={MusicApp} alt="" />
+          <a href="https://emsystemdev.netlify.app/" target="_blank">
+            <img src={empl} alt="" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://1700ebooks.netlify.app/" target="_blank">
             <img src={labcare} alt="" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Ecommerce} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://khatabookdev.netlify.app" target="_blank">
+            <img src={MusicApp} alt="" />
           </a>
         </SwiperSlide>
       </Swiper>
