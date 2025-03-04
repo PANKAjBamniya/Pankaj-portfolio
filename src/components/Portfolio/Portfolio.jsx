@@ -7,6 +7,7 @@ import Ecommerce from "../../img/job project .png";
 import labcare from "../../img/labcare.png";
 import MusicApp from "../../img/khatabook.png";
 import empl from "../../img/empl.png";
+import dash from "../../img/dash.png";
 import { themeContext } from "../../Context";
 import { Autoplay } from "swiper";
 
@@ -52,6 +53,12 @@ const Portfolio = () => {
         <SwiperSlide>
           <a href="https://khatabookdev.netlify.app" target="_blank">
             <img src={MusicApp} alt="" />
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a href="desig-dashboard.netlify.app" target="_blank">
+            <img src={dash} alt="" />
           </a>
         </SwiperSlide>
       </Swiper>
